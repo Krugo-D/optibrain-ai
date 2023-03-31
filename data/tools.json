@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "name": "AI Tool 1",
+    "logo": "logo1.png",
+    "description": "Description for AI Tool 1",
+    "url": "https://example.com/aitool1",
+    "codingSkillRequired": "no",
+    "cost": "free",
+    "category": "webdesign",
+    "languages": ["Vietnamese", "English"]
+  },
+
+  {
+    "id": 30,
+    "name": "AI Tool 30",
+    "logo": "logo30.png",
+    "description": "Description for AI Tool 30",
+    "url": "https://example.com/aitool30",
+    "codingSkillRequired": "yes",
+    "cost": "paid",
+    "category": "data_analysis",
+    "languages": ["Vietnamese", "English"]
+  }
+]
