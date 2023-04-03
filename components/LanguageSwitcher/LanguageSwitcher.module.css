@@ -1,0 +1,26 @@
+/* LanguageSwitcher.module.css */
+.switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    color: var(--old-rose);
+}
+
+.icon,
+.lang-text {
+    font-size: 1rem;
+    color: var(--old-rose);
+    transition: color 0.3s ease;
+}
+
+.switch:hover .icon,
+.switch:hover .lang-text {
+    color: var(--moonstone);
+}

@@ -1,0 +1,46 @@
+/* Header.module.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--gunmetal);
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.h1 {
+    color: var(--antique-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navLink {
+    color: var(--antique-white);
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: var(--old-rose);
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logo-img {
+    width: 175px;
+    height: 100px;
+    object-fit: cover;
+    position: relative;
+}

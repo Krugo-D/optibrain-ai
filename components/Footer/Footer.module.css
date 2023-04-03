@@ -1,0 +1,9 @@
+/* Footer.module.css */
+.footer {
+    background-color: var(--gunmetal);
+    color: var(--antique-white);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}

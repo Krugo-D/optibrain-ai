@@ -1,15 +1,20 @@
+// LanguageSwitcher.jsx
 import useTranslation from "next-translate/useTranslation";
+import { FiGlobe } from "react-icons/fi";
+import styles from "./LanguageSwitcher.module.css";
 
 function LanguageSwitcher() {
   const { t, lang } = useTranslation();
+
   const switchLanguage = () => {
     const newLang = lang === "en" ? "vi" : "en";
     window.location.href = `/${newLang}`;
   };
 
   return (
-    <button onClick={switchLanguage}>
-      {lang === "en" ? "Tiếng Việt" : "English"}
+    <button className={styles.switch} onClick={switchLanguage}>
+      <FiGlobe className={styles.icon} />
+      <span className={styles["lang-text"]}>{lang === "en" ? "VN" : "EN"}</span>
     </button>
   );
 }

@@ -1,0 +1,29 @@
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--gunmetal);
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--antique-white);
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: var(--old-rose);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icon {
+    margin: 0 0.5rem;
+    color: var(--old-rose);
+}
