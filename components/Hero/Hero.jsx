@@ -17,7 +17,7 @@ const Hero = () => (
       <p className={styles.lead}>Optimize your brain with our AI tools.</p>
       <p>
         AI is rapidly changing the world, creating unprecedented opportunities
-        and challenges. Stay ahead of the curve with OptiBrains' cutting-edge AI
+        and challenges. Stay ahead of the curve with OptiBrain cutting-edge AI
         tools.
       </p>
     </div>
