@@ -13,17 +13,16 @@ const Header = () => {
           className={styles["logo-img"]}
         />
       </div>
-      <nav className={styles.navigation}>
-        <a href="#" className={styles.navLink}>
-          Home
-        </a>
-        <a href="#" className={styles.navLink}>
-          About
-        </a>
-        <a href="#" className={styles.navLink}>
-          Contact
-        </a>
-      </nav>
+      <a href="#" className={styles.navLink}>
+        Home
+      </a>
+      <a href="#" className={styles.navLink}>
+        About
+      </a>
+      <a href="#" className={styles.navLink}>
+        Contact
+      </a>
+
       <div className={styles.controls}>
         <LanguageSwitcher />
       </div>
