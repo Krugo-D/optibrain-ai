@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import Header from "components/Header";
-import Footer from "components/Footer.jsx";
+import Header from "components/Header/Header.jsx";
+import Footer from "components/Footer/Footer.jsx";
 
 export default function ToolDetails() {
   const router = useRouter();
