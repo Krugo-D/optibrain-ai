@@ -1,7 +1,6 @@
-const nextConfig = {
+const { i18n } = require("./next-i18next.config");
+
+module.exports = {
   reactStrictMode: true,
+  i18n,
 };
-
-const nextTranslate = require("next-translate");
-
-module.exports = Object.assign({}, nextConfig, nextTranslate());

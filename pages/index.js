@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
@@ -6,7 +8,6 @@ import ToolCard from "../components/ToolCard/ToolCard";
 import Testimonial from "../components/Testimonial/Testimonial";
 import Filter from "../components/Filter/Filter";
 import tools from "../data/tools.json";
-import useTranslation from "next-translate/useTranslation";
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -57,4 +58,13 @@ export default function Home() {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
 }

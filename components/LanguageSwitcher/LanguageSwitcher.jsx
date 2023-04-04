@@ -1,5 +1,5 @@
 // LanguageSwitcher.jsx
-import useTranslation from "next-translate/useTranslation";
+import { useTranslation } from "next-i18next";
 import { FiGlobe } from "react-icons/fi";
 import styles from "./LanguageSwitcher.module.css";
 
