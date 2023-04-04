@@ -1,33 +1,50 @@
-/* Filter.module.css */
 .filterContainer {
-    background-color: var(--accent-color);
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 5rem;
+    padding: 1rem;
+    background-color: var(--gunmetal);
+    border-radius: var(--border-radius);
+}
+
+.filterItem {
+    flex: 1;
+    padding: 0 1rem;
 }
 
 .filterTitle {
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--antique-white);
+}
+
+.dropdown {
+    width: 100%;
+    background-color: var(--antique-white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    font-family: var(--font-text);
+    color: var(--gunmetal);
 }
 
 .radioContainer {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .radioLabel {
-    font-family: var(--font-text);
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--antique-white);
     cursor: pointer;
-    margin-bottom: 5px;
-    color: var(--dark-color);
 }
 
 .radioInput {
-    margin-right: 5px;
+    margin-right: 0.5rem;
 }

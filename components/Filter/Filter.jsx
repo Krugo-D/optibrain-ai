@@ -34,27 +34,18 @@ const Filter = ({ filters, setFilters }) => {
         },
         { title: "Cost", values: costs, filterType: "cost" },
       ].map(({ title, values, filterType }) => (
-        <div key={title}>
+        <div key={title} className={styles.dropdownContainer}>
           <h5 className={styles.filterTitle}>{title}</h5>
-          <div className={styles.radioContainer}>
+          <select
+            value={filters[filterType]}
+            onChange={(e) => handleFilterChange(e, filterType)}
+            className={styles.dropdown}>
             {values.map((value) => (
-              <label
-                key={value}
-                htmlFor={`${filterType}-${value}`}
-                className={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name={filterType}
-                  value={value}
-                  id={`${filterType}-${value}`}
-                  checked={filters[filterType] === value}
-                  onChange={(e) => handleFilterChange(e, filterType)}
-                  className={styles.radioInput}
-                />
+              <option key={value} value={value}>
                 {value}
-              </label>
+              </option>
             ))}
-          </div>
+          </select>
         </div>
       ))}
     </div>

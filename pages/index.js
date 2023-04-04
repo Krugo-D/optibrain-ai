@@ -38,11 +38,10 @@ export default function Home() {
           {/* import a hero component */}
           <Hero />
         </section>
-        <section>{/* Brief introduction */}</section>
+        <section>
+          <Filter filters={filters} setFilters={setFilters} />
+        </section>
         <section className="main-content">
-          <aside className="sidebar">
-            <Filter filters={filters} setFilters={setFilters} />
-          </aside>
           <section className="tool-cards">
             {/* Featured AI tools */}
             {filteredTools.map((tool) => (
