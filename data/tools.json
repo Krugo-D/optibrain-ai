@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "ChatGPT",
-    "logo": "chatgpt_logo.png",
+    "logo": "/logos/chatgpt.png",
     "description": "A conversational AI model that can generate human-like responses to user queries.",
     "url": "https://openai.com/blog/chat-ai/",
     "codingSkillRequired": "No",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "name": "OpenAI Codex",
-    "logo": "openai_codex_logo.png",
+    "logo": "/logos/codex.png",
     "description": "An AI system that translates natural language to code.",
     "url": "https://openai.com/blog/openai-codex/",
     "codingSkillRequired": "No",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "name": "DeepL",
-    "logo": "deepl_logo.png",
+    "logo": "/logos/deepl.png",
     "description": "An AI-powered translator that produces high-quality translations.",
     "url": "https://www.deepl.com/",
     "codingSkillRequired": "No",

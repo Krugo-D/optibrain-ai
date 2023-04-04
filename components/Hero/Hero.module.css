@@ -4,26 +4,23 @@
     align-items: center;
     flex-direction: column;
     background-color: var(--gunmetal);
-    padding: 3rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     color: var(--antique-white);
+    text-align: center;
+}
+
+.logo-container {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+    padding-bottom: 5rem;
 }
 
 .lead {
     font-size: 1.25rem;
     font-weight: bold;
     margin-top: 1rem;
-    color: var(--old-rose);
-}
-
-.icons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.icon {
-    margin: 0 0.5rem;
     color: var(--old-rose);
 }

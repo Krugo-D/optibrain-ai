@@ -1,0 +1,39 @@
+.tool-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tool-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.tool-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.tool-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tool-link {
+    color: var(--deep-cerulean);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tool-link:hover {
+    text-decoration: underline;
+}

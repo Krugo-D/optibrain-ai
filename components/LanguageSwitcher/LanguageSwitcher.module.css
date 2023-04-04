@@ -9,7 +9,8 @@
     background-color: transparent;
     border: none;
     outline: none;
-    padding: 0;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
     color: var(--old-rose);
 }
 
