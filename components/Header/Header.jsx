@@ -28,6 +28,11 @@ const Header = () => {
         {/* Wrap the Blog anchor tag with Link */}
         <a className={styles.navLink}>Blog</a>
       </Link>
+      <Link href="#">
+        {" "}
+        {/* Wrap the Blog anchor tag with Link */}
+        <a className={styles.navLink}>Shop</a>
+      </Link>
 
       <div className={styles.controls}>
         <LanguageSwitcher />

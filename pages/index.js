@@ -30,6 +30,9 @@ export default function Home() {
     return filterCategory && filterCodingSkill && filterCost;
   });
 
+  // index.js
+  // ...
+
   return (
     <>
       <Header />
@@ -38,17 +41,19 @@ export default function Home() {
           {/* import a hero component */}
           <Hero />
         </section>
-        <section>
-          <Filter filters={filters} setFilters={setFilters} />
-        </section>
-        <section className="main-content">
-          <section className="tool-cards">
-            {/* Featured AI tools */}
-            {filteredTools.map((tool) => (
-              <ToolCard key={tool.id} tool={tool} />
-            ))}
+        <div className="content-container">
+          <section>
+            <Filter filters={filters} setFilters={setFilters} />
           </section>
-        </section>
+          <section className="main-content">
+            <section className="tool-cards">
+              {/* Featured AI tools */}
+              {filteredTools.map((tool) => (
+                <ToolCard key={tool.id} tool={tool} />
+              ))}
+            </section>
+          </section>
+        </div>
         <section>
           {/* Testimonials */}
           <Testimonial />
