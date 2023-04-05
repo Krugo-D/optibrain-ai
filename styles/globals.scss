@@ -56,6 +56,14 @@ h6 {
 .content-container {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  min-height: calc(100vh - 70px); // Subtract the header height
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -66,10 +74,6 @@ a {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-}
-
-.header {
-  padding: 1rem 0;
 }
 
 .navbar {

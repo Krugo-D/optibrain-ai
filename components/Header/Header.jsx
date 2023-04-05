@@ -9,8 +9,6 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles["logo-nav-wrapper"]}>
         <Link href="/">
-          {" "}
-          {/* Wrap the logo img tag with Link */}
           <img
             src="logo_transparent.png"
             alt="OptiBrain Logo"
@@ -18,20 +16,14 @@ const Header = () => {
           />
         </Link>
       </div>
-      <Link href="/faq">
-        {" "}
-        {/* Wrap the FAQ anchor tag with Link */}
-        <a className={styles.navLink}>FAQ</a>
+      <Link href="/faq" passHref>
+        <div className={styles.navLink}>FAQ</div>
       </Link>
-      <Link href="/blog">
-        {" "}
-        {/* Wrap the Blog anchor tag with Link */}
-        <a className={styles.navLink}>Blog</a>
+      <Link href="/blog" passHref>
+        <div className={styles.navLink}>Blog</div>
       </Link>
-      <Link href="#">
-        {" "}
-        {/* Wrap the Blog anchor tag with Link */}
-        <a className={styles.navLink}>Shop</a>
+      <Link href="#" passHref>
+        <div className={styles.navLink}>Shop</div>
       </Link>
 
       <div className={styles.controls}>

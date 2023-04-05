@@ -8,6 +8,7 @@
     padding-bottom: 5rem;
     color: var(--antique-white);
     text-align: center;
+    height: 90vh;
 }
 
 .logo-container {
@@ -36,8 +37,8 @@
     font-weight: bold;
     margin-top: 1rem;
     color: var(--antique-white);
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 5rem;
+    padding-top: 1rem;
     max-width: 800px;
     min-width: 320px;
 }

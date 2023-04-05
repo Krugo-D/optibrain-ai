@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Header from "../components/Header/Header";
@@ -30,16 +30,14 @@ export default function Home() {
     return filterCategory && filterCodingSkill && filterCost;
   });
 
-  // index.js
-  // ...
+  const heroRef = useRef(null);
 
   return (
     <>
       <Header />
       <main>
         <section>
-          {/* import a hero component */}
-          <Hero />
+          <Hero heroRef={heroRef} />
         </section>
         <div className="content-container">
           <section>
