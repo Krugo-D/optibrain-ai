@@ -35,7 +35,7 @@
   {
     "id": 4,
     "name": "Grammarly",
-    "logo": "grammarly_logo.png",
+    "logo": "/logos/grammarly.png",
     "description": "An AI-powered writing assistant that helps improve grammar, style, and clarity.",
     "url": "https://www.grammarly.com/",
     "codingSkillRequired": "No",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "name": "DALL-E",
-    "logo": "dalle_logo.png",
+    "logo": "/logos/dall-e.png",
     "description": "An AI model that generates images from textual descriptions.",
     "url": "https://openai.com/blog/dall-e/",
     "codingSkillRequired": "No",
@@ -55,20 +55,9 @@
     "languages": ["English", "Vietnamese"]
   },
   {
-    "id": 6,
-    "name": "GPT-3",
-    "logo": "gpt3_logo.png",
-    "description": "A powerful language model capable of generating human-like text.",
-    "url": "https://openai.com/blog/gpt-3/",
-    "codingSkillRequired": "No",
-    "cost": "Paid",
-    "categories": ["Text Creation", "Text Enhancement"],
-    "languages": ["English", "Vietnamese"]
-  },
-  {
     "id": 7,
     "name": "RunwayML",
-    "logo": "runwayml_logo.png",
+    "logo": "/logos/runwayml.png",
     "description": "A platform that simplifies the process of creating AI-generated content.",
     "url": "https://runwayml.com/",
     "codingSkillRequired": "No",
@@ -84,7 +73,7 @@
   {
     "id": 8,
     "name": "Artbreeder",
-    "logo": "artbreeder_logo.png",
+    "logo": "/logos/artbreeder.png",
     "description": "An online platform for creating AI-generated images by blending existing images.",
     "url": "https://www.artbreeder.com/",
     "codingSkillRequired": "No",
@@ -95,7 +84,7 @@
   {
     "id": 9,
     "name": "Otter.ai",
-    "logo": "otter_ai_logo.png",
+    "logo": "/logos/otterai.png",
     "description": "An AI-powered transcription and note-taking service.",
     "url": "https://otter.ai/",
     "codingSkillRequired": "No",
@@ -106,7 +95,7 @@
   {
     "id": 10,
     "name": "Jarvis.ai",
-    "logo": "jarvis_ai_logo.png",
+    "logo": "/logos/jarvisai.webp",
     "description": "An AI-powered content creation tool that helps with copywriting tasks.",
     "url": "https://www.jarvis.ai/",
     "codingSkillRequired": "No",
