@@ -5,11 +5,11 @@ import Image from "next/image";
 import ScrollButton from "../ScrollButton/ScrollButton";
 import { useTranslation } from "next-i18next";
 
-const Hero = ({ heroRef }) => {
+const Hero = ({ contentRef }) => {
   const { t } = useTranslation("common");
 
   return (
-    <div className={styles.jumbotron} ref={heroRef}>
+    <div className={styles.jumbotron}>
       {/*logo*/}
       <div className={styles["logo-container"]}>
         <Image
@@ -21,7 +21,7 @@ const Hero = ({ heroRef }) => {
       </div>
       <h1 className={styles.h1}>{t("subtitle")}</h1>
       <p className={styles.p}>{t("description")}</p>
-      <ScrollButton heroRef={heroRef} />
+      <ScrollButton contentRef={contentRef} />
     </div>
   );
 };

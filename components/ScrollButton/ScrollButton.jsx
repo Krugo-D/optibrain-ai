@@ -2,12 +2,10 @@
 import React from "react";
 import styles from "./ScrollButton.module.css";
 
-const ScrollButton = ({ heroRef }) => {
+const ScrollButton = ({ contentRef }) => {
   const handleClick = () => {
-    const heroHeight = heroRef.current.offsetHeight;
-
     window.scrollTo({
-      top: heroHeight,
+      top: contentRef.current.offsetTop,
       behavior: "smooth",
     });
   };

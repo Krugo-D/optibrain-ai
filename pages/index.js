@@ -30,16 +30,16 @@ export default function Home() {
     return filterCategory && filterCodingSkill && filterCost;
   });
 
-  const heroRef = useRef(null);
+  const contentRef = useRef(null);
 
   return (
     <>
       <Header />
       <main>
         <section>
-          <Hero heroRef={heroRef} />
+          <Hero contentRef={contentRef} />
         </section>
-        <div className="content-container">
+        <div className="content-container" ref={contentRef}>
           <section>
             <Filter filters={filters} setFilters={setFilters} />
           </section>
