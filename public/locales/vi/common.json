@@ -1,4 +1,27 @@
 {
   "subtitle": "Phát huy bản thân",
-  "description": "Trí tuệ nhân tạo (AI) đang thay đổi thế giới và việc đi trước xu hướng là rất quan trọng. OptiBrain là điểm dừng chân đầy đủ cho việc khám phá các công cụ AI mạnh mẽ phù hợp với nhu cầu của bạn. Sự lựa chọn được giám sát của chúng tôi giúp bạn khai thác tiềm năng của AI và nâng cao hiệu suất. Tham gia cuộc cách mạng AI với OptiBrain và đảm bảo một tương lai thông minh, hiệu quả hơn."
+  "description": "Trí tuệ nhân tạo (AI) đang thay đổi thế giới và việc đi trước xu hướng là rất quan trọng. OptiBrain là điểm dừng chân đầy đủ cho việc khám phá các công cụ AI mạnh mẽ phù hợp với nhu cầu của bạn. Sự lựa chọn được giám sát của chúng tôi giúp bạn khai thác tiềm năng của AI và nâng cao hiệu suất. Tham gia cuộc cách mạng AI với OptiBrain và đảm bảo một tương lai thông minh, hiệu quả hơn.",
+  "coding_skill_required": "Yêu cầu kỹ năng lập trình",
+  "cost": "Chi phí",
+  "categories": "Danh mục",
+  "languages": "Ngôn ngữ",
+  "no": "Không",
+  "yes": "Có",
+  "free": "Miễn phí",
+  "freemium": "Miễn phí có giới hạn",
+  "paid": "Trả phí",
+  "text_creation": "Tạo văn bản",
+  "text_enhancement": "Cải thiện văn bản",
+  "image_creation": "Tạo hình ảnh",
+  "coding": "Lập trình",
+  "automation": "Tự động hóa",
+  "research": "Nghiên cứu",
+  "note_taking": "Ghi chú",
+  "video_creation": "Tạo video",
+  "video_editing": "Chỉnh sửa video",
+  "autonomous": "Tự động",
+  "faq": "Câu hỏi thường gặp",
+  "blog": "Blog",
+  "shop": "Cửa hàng",
+  "all": "Tất Cả"
 }

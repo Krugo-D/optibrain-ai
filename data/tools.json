@@ -322,5 +322,16 @@
     "cost": "Freemium",
     "categories": ["Image Creation", "Automation"],
     "languages": ["English", "Vietnamese"]
+  },
+  {
+    "id": 31,
+    "name": "Auto-GPT",
+    "logo": "/logos/autogpt.png",
+    "description": "An experimental open-source application showcasing the capabilities of the GPT-4 language model. Auto-GPT autonomously develops and manages businesses to increase net worth.",
+    "url": "https://github.com/Torantulino/Auto-GPT",
+    "codingSkillRequired": "Yes",
+    "cost": "Free",
+    "categories": ["Autonomous", "Automation"],
+    "languages": ["English"]
   }
 ]

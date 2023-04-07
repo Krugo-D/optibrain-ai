@@ -2,9 +2,12 @@
 import React from "react";
 import styles from "./Header.module.css";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
-import Link from "next/link"; // Import Link component from next/link
+import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 const Header = () => {
+  const { t } = useTranslation("common");
+
   return (
     <header className={styles.header}>
       <div className={styles["logo-nav-wrapper"]}>
@@ -17,13 +20,13 @@ const Header = () => {
         </Link>
       </div>
       <Link href="/faq" passHref>
-        <div className={styles.navLink}>FAQ</div>
+        <div className={styles.navLink}>{t("faq")}</div>
       </Link>
       <Link href="/blog" passHref>
-        <div className={styles.navLink}>Blog</div>
+        <div className={styles.navLink}>{t("blog")}</div>
       </Link>
       <Link href="#" passHref>
-        <div className={styles.navLink}>Shop</div>
+        <div className={styles.navLink}>{t("shop")}</div>
       </Link>
 
       <div className={styles.controls}>

@@ -1,4 +1,27 @@
 {
   "subtitle": "Amplify yourself",
-  "description": "AI is reshaping the world and staying ahead of the curve is crucial. OptiBrain is your one-stop-shop for discovering powerful AI tools tailored to your needs. Our curated selection empowers you to harness AI's potential and elevate your performance. Join the AI revolution with OptiBrain and secure a smarter, more efficient future."
+  "description": "AI is reshaping the world and staying ahead of the curve is crucial. OptiBrain is your one-stop-shop for discovering powerful AI tools tailored to your needs. Our curated selection empowers you to harness AI's potential and elevate your performance. Join the AI revolution with OptiBrain and secure a smarter, more efficient future.",
+  "coding_skill_required": "Coding Skill Required",
+  "cost": "Cost",
+  "categories": "Categories",
+  "languages": "Languages",
+  "no": "No",
+  "yes": "Yes",
+  "free": "Free",
+  "freemium": "Freemium",
+  "paid": "Paid",
+  "text_creation": "Text Creation",
+  "text_enhancement": "Text Enhancement",
+  "image_creation": "Image Creation",
+  "coding": "Coding",
+  "automation": "Automation",
+  "research": "Research",
+  "note_taking": "Note Taking",
+  "video_creation": "Video Creation",
+  "video_editing": "Video Editing",
+  "autonomous": "Autonomous",
+  "faq": "FAQ",
+  "blog": "Blog",
+  "shop": "Shop",
+  "all": "Show All"
 }

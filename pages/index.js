@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
@@ -10,8 +9,6 @@ import Filter from "../components/Filter/Filter";
 import tools from "../data/tools.json";
 
 export default function Home() {
-  const { t } = useTranslation("common");
-
   const [filters, setFilters] = useState({
     category: "All",
     codingSkill: "All",
