@@ -20,9 +20,12 @@
   "video_creation": "Tạo video",
   "video_editing": "Chỉnh sửa video",
   "autonomous": "Tự động",
-  "faq": "Câu hỏi thường gặp",
+  "faq": "Q&A",
   "blog": "Blog",
   "shop": "Cửa hàng",
   "all": "Tất Cả",
-  "visit": "Truy cập trang web"
+  "visit": "Truy cập trang web",
+  "english": "Tiếng Anh",
+  "vietnamese": "Tiếng Việt",
+  "i_speak": "Tôi nói"
 }

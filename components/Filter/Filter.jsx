@@ -19,6 +19,7 @@ const Filter = ({ filters, setFilters }) => {
   ];
   const codingSkills = ["", "No", "Yes"];
   const costs = ["", "Free", "Freemium", "Paid"];
+  const languages = ["English", "Vietnamese"];
 
   const handleFilterChange = (event, filterType) => {
     const value = event.target.value;
@@ -38,6 +39,7 @@ const Filter = ({ filters, setFilters }) => {
           filterType: "codingSkill",
         },
         { title: t("cost"), values: costs, filterType: "cost" },
+        { title: t("i_speak"), values: languages, filterType: "language" }, // Updated this line
       ].map(({ title, values, filterType }) => (
         <div key={title} className={styles.dropdownContainer}>
           <h5 className={styles.filterTitle}>{title}</h5>

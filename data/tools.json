@@ -333,5 +333,16 @@
     "cost": "Free",
     "categories": ["Autonomous", "Automation"],
     "languages": ["English"]
+  },
+  {
+    "id": 32,
+    "name": "Synthesia",
+    "logo": "/logos/synthesia.png",
+    "description": "an AI-driven platform that simplifies professional video creation across 120 languages, saving time and resources.",
+    "url": "https://www.synthesia.io/",
+    "codingSkillRequired": "No",
+    "cost": "Paid",
+    "categories": ["Video Creation"],
+    "languages": ["English"]
   }
 ]

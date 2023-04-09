@@ -1,11 +1,10 @@
-// LanguageSwitcher.jsx
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { FiGlobe } from "react-icons/fi";
 import styles from "./LanguageSwitcher.module.css";
 
 function LanguageSwitcher() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const router = useRouter();
   const lang = i18n.language;
 

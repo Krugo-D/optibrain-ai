@@ -3,14 +3,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
     height: 40px;
     cursor: pointer;
     background-color: transparent;
     border: none;
     outline: none;
-    padding-left: 2.7rem;
-    padding-right: 2.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: var(--old-rose);
 }
 

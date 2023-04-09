@@ -1,12 +1,12 @@
 // components/layout.js
 
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Header from "../Header/Header.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
+      <Header />
       <main>{children}</main>
       <Footer />
     </>

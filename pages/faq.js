@@ -1,15 +1,21 @@
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Layout from "../components/Layout/Layout"; // Import Layout component
 import Faq from "../components/Faq/Faq"; // Import the Faq component
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"; // Import serverSideTranslations
 
 export default function FAQ() {
   return (
-    <>
-      <Header />
+    <Layout>
       <main>
         <Faq /> {/* Use the Faq component */}
       </main>
-      <Footer />
-    </>
+    </Layout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])), // Add your translation namespaces
+    },
+  };
 }

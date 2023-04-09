@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Header from "../components/Header/Header";
+import Layout from "../components/Layout/Layout"; // Import Layout component
 import Hero from "../components/Hero/Hero";
-import Footer from "../components/Footer/Footer";
 import DynamicToolCard from "../components/ToolCard/DynamicToolCard";
 import Testimonial from "../components/Testimonial/Testimonial";
 import Filter from "../components/Filter/Filter";
@@ -13,6 +12,7 @@ export default function Home() {
     category: "",
     codingSkill: "",
     cost: "",
+    language: "English",
   });
 
   const filteredTools = tools.filter((tool) => {
@@ -23,15 +23,16 @@ export default function Home() {
       tool.codingSkillRequired.toString().toLowerCase() ===
         filters.codingSkill.toLowerCase();
     const filterCost = filters.cost === "" || tool.cost === filters.cost;
+    const filterLanguage =
+      filters.language === "" || tool.languages.includes(filters.language);
 
-    return filterCategory && filterCodingSkill && filterCost;
+    return filterCategory && filterCodingSkill && filterCost && filterLanguage;
   });
 
   const contentRef = useRef(null);
 
   return (
-    <>
-      <Header />
+    <Layout>
       <main>
         <section>
           <Hero contentRef={contentRef} />
@@ -54,8 +55,7 @@ export default function Home() {
           <Testimonial />
         </section>
       </main>
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

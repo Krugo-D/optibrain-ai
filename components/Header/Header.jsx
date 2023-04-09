@@ -25,10 +25,6 @@ const Header = () => {
       <Link href="/blog" passHref>
         <div className={styles.navLink}>{t("blog")}</div>
       </Link>
-      <Link href="#" passHref>
-        <div className={styles.navLink}>{t("shop")}</div>
-      </Link>
-
       <div className={styles.controls}>
         <LanguageSwitcher />
       </div>
