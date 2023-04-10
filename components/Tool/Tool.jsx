@@ -16,17 +16,21 @@ const Tool = ({ tool }) => {
 
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-md-6">
+      <div className="row mb-4">
+        <div className={`col-md-6 ${styles["logo-description"]}`}>
           <img
             src={logo}
             alt={`${name} logo`}
             className={styles["tool-logo"]}
           />
         </div>
-        <div className="col-md-6">
+        <div className={`col-md-6 ${styles["logo-description"]}`}>
           <h1>{name}</h1>
           <p>{description}</p>
+        </div>
+      </div>
+      <div className={`row mb-4 ${styles["characteristics"]}`}>
+        <div className="col-12">
           <div className="d-flex flex-wrap">
             <div className="mr-2">
               <strong>Categories:</strong>{" "}
@@ -58,7 +62,7 @@ const Tool = ({ tool }) => {
           </div>
         </div>
       </div>
-      <div className="row mt-5">
+      <div className={`row mb-4 ${styles["tips"]}`}>
         <div className="col-12">
           <h2>Tips for using {name}</h2>
           <p>
@@ -68,7 +72,7 @@ const Tool = ({ tool }) => {
           </p>
         </div>
       </div>
-      <div className="row mt-5">
+      <div className={`row ${styles["example-prompts"]}`}>
         <div className="col-12">
           <h2>Example prompts</h2>
           <ul>

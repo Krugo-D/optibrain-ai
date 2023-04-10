@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Layout from "../components/Layout/Layout"; // Import Layout component
+import Layout from "../components/Layout/Layout";
 import Hero from "../components/Hero/Hero";
 import DynamicToolCard from "../components/ToolCard/DynamicToolCard";
 import Testimonial from "../components/Testimonial/Testimonial";
