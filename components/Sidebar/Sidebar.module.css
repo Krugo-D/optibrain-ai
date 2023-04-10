@@ -1,0 +1,26 @@
+/* components/Sidebar/Sidebar.module.css */
+.sidebar {
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.sidebar li:hover {
+    color: #007bff;
+}
+
+.active {
+    color: #007bff;
+}
+
+.active span {
+    margin-right: 5px;
+}

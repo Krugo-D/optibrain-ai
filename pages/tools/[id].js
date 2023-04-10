@@ -2,13 +2,23 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "../../components/Layout/Layout";
 import Tool from "../../components/Tool/Tool";
+import Sidebar from "../../components/Sidebar/Sidebar";
 import tools from "../../data/tools.json";
 
 const ToolDetails = ({ tool }) => {
   return (
     <Layout>
       <main>
-        <Tool tool={tool} />
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3">
+              <Sidebar />
+            </div>
+            <div className="col-md-9">
+              <Tool tool={tool} />
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   );
