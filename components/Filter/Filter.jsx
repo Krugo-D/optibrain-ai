@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import { Navbar, NavDropdown } from "react-bootstrap";
 import styles from "./Filter.module.css";
 import { useTranslation } from "next-i18next";
 
 const Filter = ({ filters, setFilters }) => {
   const { t } = useTranslation("common");
+
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const categories = [
     "",
@@ -21,8 +24,7 @@ const Filter = ({ filters, setFilters }) => {
   const costs = ["", "Free", "Freemium", "Paid"];
   const languages = ["English", "Vietnamese"];
 
-  const handleFilterChange = (event, filterType) => {
-    const value = event.target.value;
+  const handleFilterChange = (value, filterType) => {
     setFilters({
       ...filters,
       [filterType]: value,
@@ -31,32 +33,46 @@ const Filter = ({ filters, setFilters }) => {
 
   return (
     <div className={styles.filterContainer}>
-      {[
-        { title: t("categories"), values: categories, filterType: "category" },
-        {
-          title: t("coding_skill_required"),
-          values: codingSkills,
-          filterType: "codingSkill",
-        },
-        { title: t("cost"), values: costs, filterType: "cost" },
-        { title: t("i_speak"), values: languages, filterType: "language" }, // Updated this line
-      ].map(({ title, values, filterType }) => (
-        <div key={title} className={styles.dropdownContainer}>
-          <h5 className={styles.filterTitle}>{title}</h5>
-          <select
-            value={filters[filterType]}
-            onChange={(e) => handleFilterChange(e, filterType)}
-            className={styles.dropdown}>
-            {values.map((value) => (
-              <option key={value} value={value}>
-                {value === ""
-                  ? t("all")
-                  : t(value.toLowerCase().split(" ").join("_"))}
-              </option>
-            ))}
-          </select>
-        </div>
-      ))}
+      <Navbar className="navbar-dark">
+        <ul className="navbar-nav">
+          {[
+            {
+              title: t("categories"),
+              values: categories,
+              filterType: "category",
+            },
+            {
+              title: t("coding"),
+              values: codingSkills,
+              filterType: "codingSkill",
+            },
+            {
+              title: t("cost"),
+              values: costs,
+              filterType: "cost",
+            },
+            {
+              title: t("languages"),
+              values: languages,
+              filterType: "language",
+            },
+          ].map(({ title, values, filterType }) => (
+            <li key={title} className="nav-item">
+              <NavDropdown title={title} id="basic-nav-dropdown">
+                {values.map((value) => (
+                  <NavDropdown.Item
+                    key={value}
+                    onClick={() => handleFilterChange(value, filterType)}>
+                    {value === ""
+                      ? t("all")
+                      : t(value.toLowerCase().split(" ").join("_"))}
+                  </NavDropdown.Item>
+                ))}
+              </NavDropdown>
+            </li>
+          ))}
+        </ul>
+      </Navbar>
     </div>
   );
 };

@@ -1,0 +1,29 @@
+.activeFiltersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.activeFilter {
+    background-color: var(--moss-green);
+    color: var(--antique-white);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+}
+
+.activeFilter button {
+    background-color: transparent;
+    color: var(--antique-white);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.25rem;
+}
+
+.activeFilter button:hover,
+.activeFilter button:focus {
+    color: var(--gunmetal);
+}

@@ -1,4 +1,3 @@
-// Hero.jsx
 import React from "react";
 import styles from "./Hero.module.css";
 import Image from "next/image";
@@ -10,17 +9,18 @@ const Hero = ({ contentRef }) => {
 
   return (
     <div className={styles.jumbotron}>
-      {/*logo*/}
+      <div className={styles["text-container"]}>
+        <h1 className={styles.h1}>{t("subtitle")}</h1>
+        <p className={styles.p}>{t("description")}</p>
+      </div>
       <div className={styles["logo-container"]}>
         <Image
-          src="/logo_transparent.png"
-          alt="OptiBrain Logo"
+          src="/branding/logo-full.webp"
+          alt="toolpicker.ai logo"
           layout="fill" // Fill the logo container
-          objectFit="cover" // Cover the logo container
+          objectFit="contain" // Contain the logo within the logo container
         />
       </div>
-      <h1 className={styles.h1}>{t("subtitle")}</h1>
-      <p className={styles.p}>{t("description")}</p>
       <ScrollButton contentRef={contentRef} />
     </div>
   );

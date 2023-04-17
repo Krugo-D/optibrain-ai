@@ -10,17 +10,17 @@
     outline: none;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: var(--old-rose);
+    color: var(--primary);
 }
 
 .icon,
 .lang-text {
     font-size: 1rem;
-    color: var(--old-rose);
+    color: var(--primary);
     transition: color 0.3s ease;
 }
 
 .switch:hover .icon,
 .switch:hover .lang-text {
-    color: var(--moonstone);
+    color: var(--dark);
 }

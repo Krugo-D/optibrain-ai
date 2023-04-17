@@ -4,17 +4,18 @@ import Layout from "../../components/Layout/Layout";
 import Tool from "../../components/Tool/Tool";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import tools from "../../data/tools.json";
+import styles from "./tools.module.css";
 
 const ToolDetails = ({ tool }) => {
   return (
     <Layout>
-      <main>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3">
+      <main className={styles.main}>
+        <div className={styles.container}>
+          <div className={styles.row}>
+            <div className={styles["col-md-3"]}>
               <Sidebar />
             </div>
-            <div className="col-md-9">
+            <div className={styles["col-md-9"]}>
               <Tool tool={tool} />
             </div>
           </div>

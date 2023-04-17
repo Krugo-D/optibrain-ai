@@ -13,7 +13,9 @@ const ToolCard = ({ tool }) => {
 
   return (
     <div className={styles["tool-card"]}>
-      <img src={logo} alt={`${name} logo`} className={styles["tool-logo"]} />
+      <div className={styles["logo-container"]}>
+        <img src={logo} alt={`${name} logo`} className={styles["tool-logo"]} />
+      </div>
       <h3 className={styles["tool-name"]}>{name}</h3>
       <p className={styles["tool-description"]}>{t(`descriptions:${id}`)}</p>
       <Link href={url} passHref>

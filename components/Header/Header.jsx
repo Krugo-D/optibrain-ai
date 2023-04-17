@@ -12,11 +12,18 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles["logo-nav-wrapper"]}>
         <Link href="/">
-          <img
-            src="logo_transparent.png"
-            alt="OptiBrain Logo"
-            className={styles["logo-img"]}
-          />
+          <div className={styles["logo-wrapper"]}>
+            <img
+              src="/favicon.png"
+              alt="toolpicker.ai icon"
+              className={styles["favicon-img"]}
+            />
+            <img
+              src="/branding/logo-name.webp"
+              alt="toolpicker.ai logo"
+              className={styles["logo-img"]}
+            />
+          </div>
         </Link>
       </div>
       <Link href="/faq" passHref>

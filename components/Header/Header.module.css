@@ -3,12 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: var(--gunmetal);
+    padding: 0rem;
+    background-color: var(--secondary);
     position: relative;
     overflow: hidden;
-    height: 70px;
-    min-height: 10vh;
+    height: 40px;
 }
 
 .navigation {
@@ -18,19 +17,19 @@
 }
 
 .h1 {
-    color: var(--antique-white);
+    color: var(--primary);
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .navLink {
-    color: var(--antique-white);
+    color: var(--primary);
     text-decoration: none;
 }
 
 .navLink:hover {
-    color: var(--old-rose);
+    color: var(--dark);
 }
 
 .controls {
@@ -39,9 +38,17 @@
     align-items: center;
 }
 
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .logo-img {
-    width: 175px;
-    height: 100px;
-    object-fit: cover;
-    position: relative;
+    width: auto;
+    height: 20px;
+    transform: translateY(10%);
+}
+
+.favicon-img {
+    height: 25px;
 }

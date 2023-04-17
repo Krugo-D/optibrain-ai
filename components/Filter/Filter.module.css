@@ -1,49 +1,112 @@
+/* Filter.module.css */
 .filterContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1.5rem;
-    background-color: var(--gunmetal);
+    background-color: var(--light);
     border-radius: var(--border-radius);
 }
 
-.filterItem {
-    flex: 1;
-    padding: 0 1rem;
+@media (max-width: 767px) {
+    .filterContainer {
+        padding: 1.0rem;
+    }
 }
 
-.filterTitle {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--antique-white);
-}
-
-.dropdown {
-    width: 100%;
-    background-color: var(--antique-white);
+.navbar {
+    background-color: transparent;
     border: none;
-    border-radius: var(--border-radius);
-    padding: 0.5rem 1rem;
-    font-family: var(--font-text);
-    color: var(--gunmetal);
+    padding: 0;
 }
 
-.radioContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+.nav-link {
+    color: var(--primary);
 }
 
-.radioLabel {
-    display: inline-flex;
-    align-items: center;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--antique-white);
+.dropdown-toggle {
+    color: var(--primary) !important;
+}
+
+.nav-link {
+    color: var(--primary) !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary);
+}
+
+.dropdown-item {
     cursor: pointer;
 }
 
-.radioInput {
-    margin-right: 0.5rem;
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.nav-item {
+    padding: 0 1rem;
+    text-align: center;
+    white-space: nowrap;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .nav-item {
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        will-change: initial;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        background-color: var(--primary);
+        border: none;
+        border-radius: var(--border-radius);
+        padding: 0.5rem 1rem;
+        font-family: var(--font-text);
+        color: var(--secondary);
+        text-align: left;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: var(--secondary);
+        color: var(--primary);
+    }
 }

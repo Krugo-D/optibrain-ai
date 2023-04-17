@@ -4,33 +4,31 @@
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--old-rose);
+    background-color: transparent;
     border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
     cursor: pointer;
     z-index: 5;
-    animation: bounce 2s infinite;
+    animation: pulsate 2s infinite;
     bottom: 2.5rem;
-        /* Add this line */
 }
 
-@keyframes bounce {
+.arrow {
+    font-size: 1.5rem;
+}
 
-    0%,
-    20%,
-    50%,
-    80%,
+@keyframes pulsate {
+    0% {
+        transform: scale(1) translateX(-50%);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2) translateX(-50%);
+        opacity: 0.5;
+    }
+
     100% {
-        transform: translateY(0) translateX(-50%);
-    }
-
-    40% {
-        transform: translateY(-30px) translateX(-50%);
-    }
-
-    60% {
-        transform: translateY(-15px) translateX(-50%);
+        transform: scale(1) translateX(-50%);
+        opacity: 1;
     }
 }

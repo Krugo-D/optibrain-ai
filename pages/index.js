@@ -1,3 +1,4 @@
+// index.js
 import React, { useState, useRef } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "../components/Layout/Layout";
@@ -6,6 +7,7 @@ import DynamicToolCard from "../components/ToolCard/DynamicToolCard";
 import Testimonial from "../components/Testimonial/Testimonial";
 import Filter from "../components/Filter/Filter";
 import tools from "../data/tools.json";
+import ActiveFilters from "../components/Filter/ActiveFilters/ActiveFilters";
 
 export default function Home() {
   const [filters, setFilters] = useState({
@@ -17,12 +19,17 @@ export default function Home() {
 
   const filteredTools = tools.filter((tool) => {
     const filterCategory =
-      filters.category === "" || tool.categories.includes(filters.category);
+      filters.category === "" ||
+      tool.categories
+        .map((c) => c.toLowerCase())
+        .includes(filters.category?.toLowerCase() ?? "");
     const filterCodingSkill =
       filters.codingSkill === "" ||
-      tool.codingSkillRequired.toString().toLowerCase() ===
-        filters.codingSkill.toLowerCase();
-    const filterCost = filters.cost === "" || tool.cost === filters.cost;
+      tool.codingSkillRequired?.toLowerCase() ===
+        (filters.codingSkill?.toLowerCase() ?? "");
+    const filterCost =
+      filters.cost === "" ||
+      tool.cost?.toLowerCase() === (filters.cost?.toLowerCase() ?? "");
     const filterLanguage =
       filters.language === "" || tool.languages.includes(filters.language);
 
@@ -40,6 +47,15 @@ export default function Home() {
         <div className="content-container" ref={contentRef}>
           <section>
             <Filter filters={filters} setFilters={setFilters} />
+            <ActiveFilters
+              filters={filters}
+              handleRemoveFilter={(filterName) => {
+                setFilters({
+                  ...filters,
+                  [filterName]: "",
+                });
+              }}
+            />{" "}
           </section>
           <section className="main-content">
             <section className="tool-cards">

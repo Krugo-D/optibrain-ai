@@ -1,6 +1,7 @@
 // components/ScrollButton/ScrollButton.jsx
 import React from "react";
 import styles from "./ScrollButton.module.css";
+import { ArrowDownCircle } from "react-bootstrap-icons";
 
 const ScrollButton = ({ contentRef }) => {
   const handleClick = () => {
@@ -13,7 +14,7 @@ const ScrollButton = ({ contentRef }) => {
   return (
     <>
       <button className={styles.scrollButton} onClick={handleClick}>
-        ↓
+        <ArrowDownCircle />
       </button>
     </>
   );
