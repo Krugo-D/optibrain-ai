@@ -1,3 +1,5 @@
+// Header.jsx
+
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import {
@@ -33,7 +35,7 @@ const Header = () => {
             className={styles["favicon-img"]}
           />
           <img
-            src="/branding/logo-name.webp"
+            src="/branding/logo-name.png"
             alt="toolpicker.ai logo"
             className={styles["logo-img"]}
           />

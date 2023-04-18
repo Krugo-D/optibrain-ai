@@ -15,10 +15,14 @@ function LanguageSwitcher() {
   };
 
   return (
-    <button className={styles.switch} onClick={switchLanguage}>
+    <div
+      className={styles.switch}
+      onClick={switchLanguage}
+      tabIndex={0}
+      role="button">
       <FiGlobe className={styles.icon} />
       <span className={styles["lang-text"]}>{lang === "en" ? "VN" : "EN"}</span>
-    </button>
+    </div>
   );
 }
 

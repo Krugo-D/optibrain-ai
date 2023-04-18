@@ -1,3 +1,5 @@
+//Hero.jsx
+
 import React from "react";
 import styles from "./Hero.module.css";
 import Image from "next/image";
@@ -19,7 +21,7 @@ const Hero = ({ contentRef }) => {
       </div>
       <div className={styles["logo-container"]}>
         <Image
-          src="/branding/logo-full.webp"
+          src="/branding/logo-full.png"
           alt="toolpicker.ai logo"
           width={800} // Set a width for the logo
           height={400} // Set a height for the logo
