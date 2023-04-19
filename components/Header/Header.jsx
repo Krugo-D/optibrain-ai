@@ -1,11 +1,8 @@
-// Header.jsx
-
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import {
   MDBNavbar,
   MDBNavbarToggler,
-  MDBIcon,
   MDBCollapse,
   MDBBtn,
 } from "mdb-react-ui-kit";
@@ -71,7 +68,14 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
           onClick={() => setShowNavExternal(!showNavExternal)}>
-          <MDBIcon icon="bars" fas />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="var(--primary)">
+            <path d="M0 3h24v2H0zm0 7h24v2H0zm0 7h24v2H0z" />
+          </svg>
         </MDBNavbarToggler>
       </MDBNavbar>
 

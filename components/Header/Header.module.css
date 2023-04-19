@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem;
+    padding: 0.6rem;
+    /* Updated */
     background-color: var(--secondary);
     position: relative;
     overflow: hidden;
@@ -19,12 +20,14 @@
 
 .logo-img {
     width: auto;
-    height: 20px;
+    height: 23px;
+    /* Updated */
     transform: translateY(10%);
 }
 
 .favicon-img {
-    height: 25px;
+    height: 29px;
+    /* Updated */
     margin-right: 0.2rem;
 }
 
@@ -38,6 +41,8 @@
     text-decoration: none;
     cursor: pointer;
     margin-right: 1rem;
+    font-size: 0.8rem;
+    /* Updated */
 }
 
 .menu-btn:hover {
@@ -46,6 +51,9 @@
 
 .mobile-toggler {
     display: none;
+    color: var(--primary);
+    font-size: 1.7rem;
+    /* Updated */
 }
 
 .menu {
