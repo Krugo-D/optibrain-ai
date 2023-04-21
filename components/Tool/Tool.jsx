@@ -15,6 +15,18 @@ const headingIds = {
 };
 
 const Tool = ({ blogPost }) => {
+  if (blogPost.defaultMessage) {
+    return (
+      <Container>
+        <Row className="my-4">
+          <Col>
+            <h4>{blogPost.defaultMessage}</h4>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
+
   const { attributes } = blogPost.data;
 
   return (

@@ -56,11 +56,20 @@ export async function getStaticProps({ params, locale }) {
     };
   }
 
-  // Fetch the blog post data from Strapi using axios
-  const response = await axios.get(
-    `http://127.0.0.1:1337/api/tool-reviews/${params.id}`
-  );
-  const blogPost = response.data; // Get only the data property from the Axios response
+  let blogPost;
+
+  try {
+    // Fetch the blog post data from Strapi using axios
+    const response = await axios.get(
+      `https://toolpicker-strapi-production.up.railway.app/api/tool-reviews/${params.id}`
+    );
+    blogPost = response.data; // Get only the data property from the Axios response
+  } catch (error) {
+    blogPost = {
+      defaultMessage:
+        "This Blog post hasn't been written yet, please check back soon! 😊",
+    };
+  }
 
   return {
     props: {
