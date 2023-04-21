@@ -1,40 +1,41 @@
 // components/Sidebar/Sidebar.jsx
-import React, { useState } from "react";
+import React from "react";
+import { ListGroup } from "react-bootstrap";
 import styles from "./Sidebar.module.css";
 
+const headingIds = {
+  Introduction: "introduction",
+  Review: "review",
+  Rating: "rating",
+  Tips: "tips",
+  Pros: "pros",
+  Cons: "cons",
+  Cost: "cost",
+  Alternatives: "alternatives",
+};
+
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const Sidebar = () => {
-  const [selected, setSelected] = useState(0);
-
-  const sections = [
-    "AI Tool Overview",
-    "Characteristics",
-    "Expert Review",
-    "AI Tool Ratings",
-    "Pros & Cons",
-    "Use Cases and Examples",
-    "Tips and Tricks for Using the AI Tool",
-  ];
-
-  const handleClick = (index) => {
-    setSelected(index);
-    const target = document.getElementById(sections[index].replace(/ /g, "-"));
-    target.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <div className={styles.sidebar}>
-      <ul>
-        {sections.map((section, index) => (
-          <li
-            key={index}
-            className={selected === index ? styles.active : ""}
-            onClick={() => handleClick(index)}>
-            {selected === index && <span>&#x25B6;</span>}
-            {section}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ListGroup className={styles.sticky}>
+      <ListGroup.Item active className="bg-primary text-white">
+        Contents
+      </ListGroup.Item>
+      {Object.keys(headingIds).map((heading) => (
+        <ListGroup.Item
+          key={headingIds[heading]}
+          action
+          onClick={() => scrollToSection(headingIds[heading])}>
+          {heading}
+        </ListGroup.Item>
+      ))}
+    </ListGroup>
   );
 };
 

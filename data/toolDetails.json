@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "review": "ChatGPT is an impressive conversational AI model developed by OpenAI. It has the ability to generate human-like responses to user queries, making it an essential tool for chatbot development, content generation, and more.",
+    "rating": 4.5,
+    "tips": "To get the most out of ChatGPT, you should be familiar with OpenAI's API and take advantage of its fine-tuning capabilities. This will enable you to tailor the model to your specific use case.",
+    "pros": [
+      "Generates human-like responses",
+      "Supports multiple languages",
+      "Extensive fine-tuning capabilities"
+    ],
+    "cons": [
+      "Requires coding skills for advanced usage",
+      "Can be expensive for large-scale applications"
+    ],
+    "alternatives": "Some alternatives to ChatGPT include GPT-3, GPT-2, and Microsoft's Turing NLG.",
+    "lastUpdated": "2023-04-19"
+  }
+]

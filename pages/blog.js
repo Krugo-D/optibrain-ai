@@ -8,16 +8,7 @@ export default function Blog() {
   return (
     <Layout>
       <main>
-        <section>
-          <h1>Blog</h1>
-          {/* List of blog articles */}
-          <article>
-            <h2>Blog Post Title</h2>
-            <p>Blog Post Excerpt</p>
-            <a href="/blog/post-slug">Read More</a>
-          </article>
-          {/* Add more blog articles */}
-        </section>
+        <section>under construction..</section>
       </main>
     </Layout>
   );

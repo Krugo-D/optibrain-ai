@@ -1,26 +1,34 @@
 // pages/tools/[id].js
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { Container, Row, Col } from "react-bootstrap";
+import axios from "axios";
 import Layout from "../../components/Layout/Layout";
 import Tool from "../../components/Tool/Tool";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Overview from "../../components/Tool/Overview/Overview";
 import tools from "../../data/tools.json";
 import styles from "./tools.module.css";
 
-const ToolDetails = ({ tool }) => {
+const ToolDetails = ({ tool, blogPost }) => {
+  console.log(`blog post console.log: ` + blogPost);
+
   return (
     <Layout>
-      <main className={styles.main}>
-        <div className={styles.container}>
-          <div className={styles.row}>
-            <div className={styles["col-md-3"]}>
-              <Sidebar />
-            </div>
-            <div className={styles["col-md-9"]}>
-              <Tool tool={tool} />
-            </div>
-          </div>
-        </div>
-      </main>
+      <Container>
+        <Row>
+          <Col>
+            <Overview tool={tool} />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={3}>
+            <Sidebar />
+          </Col>
+          <Col md={9}>
+            <Tool tool={tool} blogPost={blogPost} />
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   );
 };
@@ -48,10 +56,17 @@ export async function getStaticProps({ params, locale }) {
     };
   }
 
+  // Fetch the blog post data from Strapi using axios
+  const response = await axios.get(
+    `http://127.0.0.1:1337/api/tool-reviews/${params.id}`
+  );
+  const blogPost = response.data; // Get only the data property from the Axios response
+
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common", "descriptions"])),
       tool,
+      blogPost,
     },
   };
 }

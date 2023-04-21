@@ -1,26 +1,17 @@
 /* components/Sidebar/Sidebar.module.css */
 .sidebar {
+    position: sticky;
+    top: 1.5rem;
+    /* Add top margin */
     padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar li {
-    cursor: pointer;
-    padding: 5px;
-}
-
-.sidebar li:hover {
-    color: #007bff;
-}
-
-.active {
-    color: #007bff;
-}
-
-.active span {
-    margin-right: 5px;
+@media screen and (min-width: 768px) {
+    .sticky {
+        position: sticky;
+        top: 1.5rem;
+        /* Add top margin */
+    }
 }

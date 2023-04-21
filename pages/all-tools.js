@@ -14,7 +14,7 @@ export default function AllTools() {
     category: "",
     codingSkill: "",
     cost: "",
-    language: "English",
+    language: "",
   });
 
   const filteredTools = tools.filter((tool) => {

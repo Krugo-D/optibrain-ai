@@ -1,20 +1,14 @@
-/* components/Tool/Tool.module.css */
-.tool-logo {
-    max-width: 100%;
-    height: auto;
+.sidebarCol {
+    margin-bottom: 20px;
 }
 
-.logo-description,
-.characteristics,
-.tips,
-.example-prompts {
+.contentCol {
+    margin-bottom: 20px;
+}
+
+.section {
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-}
-
-.logo-description:not(:last-child),
-.characteristics,
-.tips {
     margin-bottom: 20px;
 }
